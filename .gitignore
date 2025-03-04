@@ -11,8 +11,6 @@
 !kitty/**/*
 !hypr
 !hypr/**/*
-!dolphin
-!dolphin/**/*
 !waybar
 !waybar/**/*
 !scripts
