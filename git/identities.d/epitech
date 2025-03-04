@@ -1,0 +1,7 @@
+[user]
+name = Ethan THIERRY
+email = ethan.thierry@epitech.eu
+signingkey = 7DD3A3209FC64547
+
+[commit]
+gpgsign = true

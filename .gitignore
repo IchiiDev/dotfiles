@@ -1,0 +1,23 @@
+# Disallow everything
+*
+
+# Whitelist files and directories
+
+# Files
+!.gitignore
+
+# Folders
+!kitty
+!kitty/**/*
+!hypr
+!hypr/**/*
+!dolphin
+!dolphin/**/*
+!waybar
+!waybar/**/*
+!scripts
+!scripts/**/*
+!ags
+!ags/**/*
+!git
+!git/**/*

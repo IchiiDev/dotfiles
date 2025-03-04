@@ -1,0 +1,54 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 40,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["custom/runes"],
+    "modules-right": ["tray", "memory", "cpu", "pulseaudio", "clock#time"],
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "all-outputs": true,
+        "format": "{icon}",
+        "disable-scroll": true,
+        "active-only": false,
+        "format-icons": {
+          "default": "",
+          "active": ""
+        }
+    },
+    "custom/runes": {
+        "format": "EDEN"
+    },
+    "pulseaudio": {
+       //"scroll-step": 1,
+       "format": "{volume}% {icon}",
+       "format-bluetooth": "{icon}   {volume}%",
+       "format-muted": "",
+       "format-icons": {
+           "headphones": "",
+           "handsfree": "",
+           "headset": "",
+           "phone": "",
+           "portable": "",
+           "car": "",
+           "default": ["", ""]
+       },
+       "on-click": "pavucontrol"
+    },
+    "clock#time": {
+        "format": "{:%H:%M:%S}",
+        "interval": 1
+    },
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+    "cpu": {
+        "interval": 5,
+        "format": " {usage}%", // Icon: microchip
+        "states": {
+          "warning": 70,
+          "critical": 90
+        }
+    }
+}

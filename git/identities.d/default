@@ -1,0 +1,7 @@
+[user]
+name = ichiidev
+email = 45918948+IchiiDev@users.noreply.github.com
+signingkey = 35E279377BD9D110
+
+[commit]
+gpgsign = true
