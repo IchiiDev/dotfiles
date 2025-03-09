@@ -7,8 +7,16 @@ path = "identities.d/epitech"
 [includeIf "gitdir/i:work/fca/"]
 path = "identities.d/fca"
 
+[includeIf "hasconfig:remote.*.url:git@github.com:SumFleet/**"]
+path = "identities.d/sumfleet"
+
 [init]
 defaultBranch = main
 
 [pull]
 rebase = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
