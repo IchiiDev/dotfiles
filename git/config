@@ -14,7 +14,7 @@ path = "identities.d/sumfleet"
 defaultBranch = main
 
 [pull]
-rebase = true
+rebase = false
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
