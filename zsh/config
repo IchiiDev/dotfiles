@@ -1,0 +1,25 @@
+if [ ! -f "$HOME/.zshinit" ]; then
+    source $HOME/.config/zsh/init
+fi
+
+# Path to your Oh My Zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
+# Theme
+ZSH_THEME="fwalch" # set by `omz`
+
+plugins=(
+    git
+    vscode
+    emoji
+    zsh-autosuggestions
+    sudo
+    history
+    aliases
+    docker-compose
+    dotenv
+    zsh-interactive-cd
+    themes
+)
+
+source $ZSH/oh-my-zsh.sh

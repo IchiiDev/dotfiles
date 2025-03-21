@@ -26,3 +26,5 @@
 !gh
 !gh/**/*
 gh/hosts.yml
+!zsh
+!zsh/**/*
